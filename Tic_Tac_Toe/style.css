@@ -8,6 +8,7 @@ body{
     justify-content: center;
     height: 100vh;
     align-items: center;
+    flex-direction: column;
 }
 
 .div{
@@ -16,19 +17,26 @@ body{
     width: 400px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
     padding: 5px;
 }
 
 .box{
-    background-color: rgb(25, 182, 255);
-    border-radius: 1px solid red;    
+    background-color: rgb(10, 188, 242); 
+    border: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 50px;
 }
 
-.box:hover{
-    background-color: rgb(21, 146, 204);
+
+
+#result{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 27vw;
+    margin-top: 20px;
+    text-align: center;
 }
