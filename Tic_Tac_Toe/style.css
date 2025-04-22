@@ -71,3 +71,54 @@ h1{
 #reset:hover{
     background-color: rgb(4, 124, 194);
 }
+
+#alertsection{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: transparent;
+    backdrop-filter: brightness(40%);
+}
+
+#alertbox{
+    border: 10px solid rgb(241, 227, 208);
+    background-color: rgb(245, 209, 159);
+    border-radius: 10px;
+    box-shadow: 2px 5px 10px black;
+    height: 200px;
+    width: 300px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#congrats{
+    margin-bottom: 20px;
+    text-shadow: 1px 3px 10px rgb(247, 161, 49);
+}
+
+#message{
+    margin-bottom: 30px;
+}
+
+#ok{
+    height: 50px;
+    width: 100px;
+    align-self: center;
+    border: 0;
+    border-radius: 10px;
+    box-shadow: 1px 2px 7px black;
+    font-size: 20px;
+    color: rgb(131, 106, 60);
+    text-shadow: 1px 2px 10px rgb(192, 140, 73);
+    background-color: rgb(241, 191, 126);
+}
+
+#ok:hover{
+    background-color: rgb(216, 168, 106);
+    
+}

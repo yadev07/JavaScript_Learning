@@ -8,7 +8,7 @@ let btn7 = document.getElementById("btn7");
 let btn8 = document.getElementById("btn8");
 let btn9 = document.getElementById("btn9");
 let res = document.getElementById("reset");
-
+let ok = document.getElementById("ok");
 let c1 = c2 = c3 = c4 = c5 = c6 = c7 = c8 = c9 = 0;
 let chance = 'O';
 
@@ -114,46 +114,96 @@ btn9.onclick = function () {
     
 };
 
+ok.onclick = function(){
+    document.getElementById('alertsection').style.display = 'none';
+}
+
+alert_func = function(message){
+    x = document.getElementById('alertsection');
+    x.style.display = "flex";
+    document.getElementById('message').innerText = message;
+}
 
 function checkWin() {
+    let message = "";
     if(btn1.innerText == btn2.innerText && btn1.innerText == btn3.innerText && btn1.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     else if(btn4.innerText == btn5.innerText && btn4.innerText == btn6.innerText && btn4.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }    
     else if(btn7.innerText == btn8.innerText && btn7.innerText == btn9.innerText && btn7.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     else if(btn1.innerText == btn4.innerText && btn1.innerText == btn7.innerText && btn1.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     else if(btn2.innerText == btn5.innerText && btn2.innerText == btn8.innerText && btn2.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     else if(btn3.innerText == btn6.innerText && btn3.innerText == btn9.innerText && btn3.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     else if(btn1.innerText == btn5.innerText && btn1.innerText == btn9.innerText && btn1.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     else if(btn3.innerText == btn5.innerText && btn3.innerText == btn7.innerText && btn3.innerText != ""){
         document.getElementById('result').innerText = chance + " Wins..!";
-        alert(chance + " Wins..!");
+        if(chance == 'X'){
+            message = "Player_1 Wins..!";
+        }else{
+            message = "Player_2 Wins..!";
+        }
+        alert_func(message);
         return true;
     }
     return false; 
