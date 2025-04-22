@@ -11,15 +11,20 @@ body{
     flex-direction: column;
 }
 
+h1{
+    text-shadow: 1px 3px 10px rgb(247, 161, 49);
+}
+
 .div{
-    border: 1px solid black;
     height: 400px;
     width: 400px;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     gap: 5px;
     padding: 5px;
+    box-shadow: 2px 5px 10px black;
 }
 
 .box{
@@ -31,12 +36,38 @@ body{
     font-size: 50px;
 }
 
-
+.box:hover{
+    background-color: rgb(10, 161, 207); 
+    
+}
 
 #result{
-    background-color: antiquewhite;
+    background-color: rgb(252, 210, 156);
     height: 50px;
-    width: 27vw;
-    margin-top: 20px;
+    width: 100%;
+    border-radius: 5px 0 0 5px;
+    padding-top: 20px;
+    font-size: 30px;
     text-align: center;
+}
+
+.div2{
+    display: grid;
+    width: 400px;
+    border-radius: 5px;
+    grid-template-columns: 5.3fr 1fr;
+    margin-top: 20px;
+    box-shadow: 2px 5px 10px black;
+}
+
+#reset{
+    background-color: rgb(0, 162, 255);
+    border: 0;
+    height: 70px;
+    width: 6vw;
+    border-radius: 0 5px 5px 0;
+}
+
+#reset:hover{
+    background-color: rgb(4, 124, 194);
 }
